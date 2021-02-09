@@ -2,6 +2,7 @@
 --vermelho:#E50914;
 --preto:#141414;
 --cinzaE:#727272;
+--cinzaE2:#3b3b3b;
 --cinzaC:#b9b9b9;
 
 
@@ -11,14 +12,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Elementos base*/
 body{
     background-color:var(--preto);
     font-family: 'Times New Roman', Times, serif;
 }
 
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header .logo{
     color:var(--vermelho);
+    margin-left: 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
@@ -27,8 +36,29 @@ header nav a{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: var(--cinzaE);
-    margin-right: 10px;
+    margin-right: 12px;
 }
 header nav a:hover {
     color: var(--cinzaC);
+}
+
+/*Filme principal*/
+.filme-principal{
+    margin-left: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background: url('/img/sevenSeal.jpg');
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.titulo{
+    font-size: 30px;
 }
